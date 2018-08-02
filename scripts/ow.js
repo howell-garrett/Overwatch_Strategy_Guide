@@ -2,84 +2,22 @@ var tankShowing = false;
 var damageShowing = false;
 
 
-//show Orisa's section
-$(document).ready(function(){
-    $("#orisa").click(function(){
-         if (tankShowing) {
-             closeAllTanks();
-         } else {
-        $("#orisaProfile").toggle(250); } tankShowing = !tankShowing; console.log(tankShowing);
-    });
-});
+var prevTank = "";
 
-//show Dva's section
-$(document).ready(function(){
-    $("#dva").click(function(){
-        if ( tankShowing) {
-            closeAllTanks();
-         } else { 
-        $("#dvaProfile").toggle(250);
-         } tankShowing=!tankShowing;
-        console.log(tankShowing);
-     
-    });
-});
-
-//show Rein's section
-$(document).ready(function(){
-    $("#reinhardt").click(function(){
-    if (tankShowing) {
-        closeAllTanks();
-    } else {
-        $("#reinhardtProfile").toggle(250);
-    } tankShowing=!tankShowing; console.log(tankShowing);
-    });
-});
-
-//show Roadhog's section
-$(document).ready(function(){
-    $("#roadhog").click(function(){
-    if (tankShowing) {
-        closeAllTanks();
-    } else {
-        $("#roadhogProfile").toggle(250);
-    } tankShowing=!tankShowing;
-    });
-});
-
-//show Winston's profile
-$(document).ready(function(){
-    $("#winston").click(function(){
-    if (tankShowing) {
-        closeAllTanks();
-    } else {
-        $("#winstonProfile").toggle(250);
-    } tankShowing=!tankShowing;
-    });
-});
-
-//show Hammond's profile
-$(document).ready(function(){
-    $("#wrecking_ball").click(function(){
-    if (tankShowing) {
-        closeAllTanks();
-    } else {
-        $("#wrecking_ballProfile").toggle(250);
-    } tankShowing=!tankShowing; console.log(tankShowing);
-    });
-});
+function showContent(character, profile) {
+   if (prevTank == character) {
+       return;
+   }
+     console.log("beginning  " + document.getElementById(profile).style.display);
+    closeAllTanks();
+    $("#" + profile).toggle(250);
+    prevTank = character;
+}
 
 
-//show Zarya's Profile
-$(document).ready(function(){
-    $("#zarya").click(function(){
-    if (tankShowing) {
-        closeAllTanks();
-    } else {
-        $("#zaryaProfile").toggle(250);
-    } tankShowing=!tankShowing;
-    });
-});
+
+
+
 
 $(document).ready(function(){
     $("#bastion").click(function(){
@@ -98,6 +36,7 @@ function closeAllTanks() {
     $("#reinhardtProfile").hide(250);
     $("#winstonProfile").hide(250);
     $("#zaryaProfile").hide(250);
+    $("#wrecking_ballProfile").hide(250);
    
 }
 
@@ -109,6 +48,7 @@ function closeAllDamage() {
     $("#hanzoProfile").hide(250);
     $("#junkratProfile").hide(250);
     $("#mccreeProfile").hide(250);
+    
    
 }
 }
