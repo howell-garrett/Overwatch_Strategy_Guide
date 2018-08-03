@@ -3,32 +3,32 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
-<img src="images/logo.png" alt="Overwatch Logo" height="100%" width="100%">
-<title id="#title">Overwatch Strategy Guide</title>
+<img id="logo" src="images/logo.png" alt="Overwatch Logo" height="80%" width="80%">
+<title id="title">Overwatch Strategy Guide</title>
 </head>
-<body>
+<body id="asdf">
 
 <h1>Strategy Guide</h1>
     <h2>Tank</h2>
     
    
-    <div class="charBox"> 
+    <div class="charBox" onclick="showContentTank(event)"> 
       
-        <img onClick="showContent('dva','dvaProfile')" class="characterIcon" id="dva" height="5%" width="5%" src="images/tank/dva.png" alt="dva"> 
+        <img class="characterIcon" id="dva" height="5%" width="5%" src="images/tank/dva.png" alt="dva"> 
     
     
-        <img onClick="showContent('orisa','orisaProfile')" class="characterIcon" id="orisa" src="images/tank/orisa.png" height="5%" width="5%" alt="orisa"> 
+        <img class="characterIcon" id="orisa" src="images/tank/orisa.png" height="5%" width="5%" alt="orisa"> 
   
    
-        <img onClick="showContent('reinhardt','reinhardtProfile')" class="characterIcon" id="reinhardt" src="images/tank/reinhardt.png" height="5%" width="5%" alt="reinhardt"> 
+        <img class="characterIcon" id="reinhardt" src="images/tank/reinhardt.png" height="5%" width="5%" alt="reinhardt"> 
   
-        <img onClick="showContent('roadhog','roadhogProfile')" class="characterIcon" id="roadhog" src="images/tank/roadhog.png" height="5%" width="5%" alt="roadhog"> 
+        <img class="characterIcon" id="roadhog" src="images/tank/roadhog.png" height="5%" width="5%" alt="roadhog"> 
   
-        <img onClick="showContent('winston','winstonProfile')" class="characterIcon" id="winston" src="images/tank/winston.png" height="5%" width="5%" alt="winston"> 
+        <img class="characterIcon" id="winston" src="images/tank/winston.png" height="5%" width="5%" alt="winston"> 
         
-        <img onClick="showContent('wrecking_ball','wrecking_ballProfile')" class="characterIcon" id="wrecking_ball" src="images/tank/wrecking_ball.png" height="5%" width="5%" alt="wrecking_ball">
+        <img class="characterIcon" id="wrecking_ball" src="images/tank/wrecking_ball.png" height="5%" width="5%" alt="wrecking_ball">
  
-        <img onClick="showContent('zarya','zaryaProfile')" class="characterIcon" id="zarya" src="images/tank/zarya.png" height="5%" width="5%" alt= "zarya"> 
+        <img class="characterIcon" id="zarya" src="images/tank/zarya.png" height="5%" width="5%" alt= "zarya"> 
     
        </div>
     
@@ -58,7 +58,7 @@
     
     <h2> Damage</h2>
       
-    <div class="charBox"> 
+    <div onclick="showContentDamage(event)" class="charBox"> 
       
         <img class="characterIcon" id="bastion" height="5%" width="5%" src="images/damage/bastion.png" alt="bastion"> 
         <img class="characterIcon" id="doomfist" src="images/damage/doomfist.png" height="5%" width="5%" alt="doomfist"> 

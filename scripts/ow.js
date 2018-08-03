@@ -1,56 +1,65 @@
 var tankShowing = false;
 var damageShowing = false;
-
+var toggleSpeed = 250;
 
 var prevTank = "";
+var prevDamage = "";
 
-function showContent(character, profile) {
-   if (prevTank == character) {
+function showContentTank(event) {
+   var char = event.target.id;
+   if (prevTank === char) {
+       close(char);
+       prevTank = "";       
        return;
+
    }
-     console.log("beginning  " + document.getElementById(profile).style.display);
     closeAllTanks();
-    $("#" + profile).toggle(250);
-    prevTank = character;
+    $("#" + char + "Profile").toggle(250);
+    prevTank = char;
 }
 
+function showContentDamage(event) {
+   var char = event.target.id;
+   if (prevDamage === char) {
+       close(char);
+       prevDamage = "";       
+       return;
+   }   
+    closeAllDamage();
+    $("#" + char + "Profile").toggle(250);
+    prevDamage = char;
+}
 
+function close(charater) {
+    $("#" + charater + "Profile").hide(toggleSpeed);
+}
 
-
-
-
-$(document).ready(function(){
-    $("#bastion").click(function(){
-    if (tankShowing) {
-        closeAllTanks();
-    } else {
-        $("#bastionProfile").toggle(250);
-    } tankShowing=!tankShowing;
-    });
-});
-
-function closeAllTanks() {
-    $("#orisaProfile").hide(250);
-    $("#dvaProfile").hide(250);
-    $("#roadhogProfile").hide(250);
-    $("#reinhardtProfile").hide(250);
-    $("#winstonProfile").hide(250);
-    $("#zaryaProfile").hide(250);
-    $("#wrecking_ballProfile").hide(250);
+function closeAllTanks(tank) {
+    $("#orisaProfile").hide(toggleSpeed);
+    $("#dvaProfile").hide(toggleSpeed);
+    $("#roadhogProfile").hide(toggleSpeed);
+    $("#reinhardtProfile").hide(toggleSpeed);
+    $("#winstonProfile").hide(toggleSpeed);
+    $("#zaryaProfile").hide(toggleSpeed);
+    $("#wrecking_ballProfile").hide(toggleSpeed);
    
 }
 
 function closeAllDamage() {
-    function closeAllTanks() {
-    $("#bastionProfile").hide(250);
-    $("#doomfistProfile").hide(250);
-    $("#genjiProfile").hide(250);
-    $("#hanzoProfile").hide(250);
-    $("#junkratProfile").hide(250);
-    $("#mccreeProfile").hide(250);
-    
-   
-}
+    $("#bastionProfile").hide(toggleSpeed);
+    $("#doomfistProfile").hide(toggleSpeed);
+    $("#genjiProfile").hide(toggleSpeed);
+    $("#hanzoProfile").hide(toggleSpeed);
+    $("#junkratProfile").hide(toggleSpeed);
+    $("#mccreeProfile").hide(toggleSpeed);
+    $("#meiProfile").hide(toggleSpeed);
+    $("#reaperProfile").hide(toggleSpeed);
+    $("#soldier76Profile").hide(toggleSpeed);
+    $("#sombraProfile").hide(toggleSpeed);
+    $("#symmetraProfile").hide(toggleSpeed);
+    $("#torbjornProfile").hide(toggleSpeed);
+    $("#tracerProfile").hide(toggleSpeed);
+    $("#widowmakerProfile").hide(toggleSpeed)
 }
 
 
