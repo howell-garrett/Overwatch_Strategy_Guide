@@ -1,9 +1,11 @@
 var tankShowing = false;
 var damageShowing = false;
+var supportShowing = false;
 var toggleSpeed = 250;
 
 var prevTank = "";
 var prevDamage = "";
+var prevSupport = "";
 
 function showContentTank(event) {
    var char = event.target.id;
@@ -30,11 +32,23 @@ function showContentDamage(event) {
     prevDamage = char;
 }
 
+function showContentSupport(event) {
+   var char = event.target.id;
+   if (prevSupport === char) {
+       close(char);
+       prevSupport = "";       
+       return;
+   }   
+    closeAllSupport();
+    $("#" + char + "Profile").toggle(250);
+    prevSupport = char;
+}
+
 function close(charater) {
     $("#" + charater + "Profile").hide(toggleSpeed);
 }
 
-function closeAllTanks(tank) {
+function closeAllTanks() {
     $("#orisaProfile").hide(toggleSpeed);
     $("#dvaProfile").hide(toggleSpeed);
     $("#roadhogProfile").hide(toggleSpeed);
@@ -62,5 +76,14 @@ function closeAllDamage() {
     $("#widowmakerProfile").hide(toggleSpeed)
 }
 
+
+function closeAllSupport() {
+    $("#anaProfile").hide(toggleSpeed);
+    $("#brigitteProfile").hide(toggleSpeed);
+    $("#lucioProfile").hide(toggleSpeed);
+    $("#mercyProfile").hide(toggleSpeed);
+    $("#moiraProfile").hide(toggleSpeed);
+    $("#zenyattaProfile").hide(toggleSpeed);
+}
 
 
