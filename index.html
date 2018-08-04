@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
+
+<div id="iconBox" class="iconBox">
+<img id="leftIcon" src="images/icon.png" height="7%" width="7%">
+<img id="logo" src="images/logo.png" alt="Overwatch Logo" height="70%" width="70%">
+<img id="rightIcon" src="images/icon.png" height="7%" width="7%"> </div>
+
 <head>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
-<img id="logo" src="images/logo.png" alt="Overwatch Logo" height="80%" width="80%">
+
 <title id="title">Overwatch Strategy Guide</title>
 </head>
-<body id="asdf">
+<body>
 
-<h1>Strategy Guide</h1>
-    <h2>Tank</h2>
+    <div id="head"><img id="dropdown" src="images/dropdown.png" height="3%" width="3%">
+    <h1> Strategy Guide</h1> </div>
+
+    <h2>Tank   <img src="images/tankIcon.png" width="2%"></h2>
     
    
     <div class="charBox" onclick="showContentTank(event)"> 
@@ -56,9 +64,9 @@
     </div>
     
     
-    <h2> Damage</h2>
+    <h2> Damage <img src="images/damageIcon.png" width="2%"> </h2>
       
-    <div onclick="showContentDamage(event)" class="charBox"> 
+    <div onclick="showContentDamage(event)" id="topDamage" class="charBox"> 
       
         <img class="characterIcon" id="bastion" height="5%" width="5%" src="images/damage/bastion.png" alt="bastion"> 
         <img class="characterIcon" id="doomfist" src="images/damage/doomfist.png" height="5%" width="5%" alt="doomfist"> 
@@ -126,7 +134,7 @@
     widowmaker ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
     </div>
     
-    <h2> Support </h2>
+    <h2> Support <img src="images/supportIcon.png" width="2%"> </h2>
     
         <div onclick="showContentSupport(event)" class="charBox"> 
     <img class="characterIcon" id="ana" src="images/support/ana.png" height="5%" width="5%" alt="ana"> 
@@ -157,6 +165,8 @@
     </div>
   
 </body>
+  <h3></h3>
+   <path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z"></path>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/ow.js"> </script>

@@ -4,28 +4,63 @@
     src: url("http://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff") format('woff');
 }
 
-body {
-    background-image:url(https://preview.ibb.co/iU8vfe/q.jpg);
-    background-size: 1500px 2000px; 
+html, body {
+ margin: 0;
+ background-color: #cee1ff;
 }
 
+
+
+.iconBox {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+
+
+}
+
+#leftIcon {
+    padding-left: 30px;
+}
+
+#rightIcon {
+    padding-right: 30px;
+}
+
+
 #logo {
+
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
+
+}
+
+#head {
+    background-color: #bcbcbc;
+}
+
+#dropdown {
+    margin-left: .5%;
+    margin-top: 10px;
+    
 }
 
 h1 {
     text-align: center;
-    margin-top: auto;
-    font-size: 200%;
+    margin-top: -2%;
+    font-size: 5vw;
     font-family: overwatch; 
+    width = 100%;
+
 }
 
 
 h2 {
     text-align: center;
     font-family: overwatch;
+    font-size: 4vw;
 }
 
 
@@ -36,7 +71,7 @@ h2 {
   border-bottom: 2px solid transparent;    
   margin: 1%;
   border-radius: 10px;
-  width: 8%;
+  width: 11%;
 
 }
 
@@ -59,9 +94,17 @@ h2 {
  
 }
 
+
 .charBox {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    
+    width: 90%;
+    margin: auto
+}
+
+#topDamage {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;;    
 }
