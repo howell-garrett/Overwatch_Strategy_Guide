@@ -89,6 +89,9 @@ h2 {
     font-size: 4vw;
 }
 
+h3 {
+   font-family: overwatch; 
+}
 
 
 .characterIcon {
@@ -111,8 +114,8 @@ h2 {
 }
 
 .charProfile {
-    width: 70%;
-    padding: 50px 0;
+    width: 90%;
+    padding: 1% 0;
     text-align: center;
     margin: auto;
     background-color: lightblue;
@@ -146,4 +149,64 @@ h2 {
 
 .socialMedia:hover {
     opacity: 1;
+}
+
+div {
+    font-size: 2vw;
+}
+
+.strategy {
+    
+    padding-left: 20px;
+    margin-left: 3%;
+    border-radius: 10px;
+   background-color: #8ac5d8;
+    margin-bottom: 1.5%;
+}
+
+.strengths {
+    padding-left: 20px;
+    margin-left: 3%;
+    border-radius: 10px;
+    background-color: #8ac5d8;
+    margin-top: 1.5%;
+}
+
+
+
+.contentFlex {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+.rightFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 3%;
+}
+
+.leftFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-right: 3%;
+}
+
+.tips {
+    
+    background-color: #8ac5d8;
+    border-radius: 10px;
+    margin-top: 1.5%;
+    
+}
+
+.counters {
+    padding-right: 1%;
+    background-color: #8ac5d8;
+    border-radius: 10px;
+    margin-bottom: 1.5%;
 }
