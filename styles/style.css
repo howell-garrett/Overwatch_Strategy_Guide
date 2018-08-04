@@ -57,6 +57,24 @@ h1 {
 }
 
 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: block;
+    background-color: aqua;
+    width: 10%;
+}
+
+.characterIcon:hover .iconBox {
+    background-color: skyblue;
+}
+
 h2 {
     text-align: center;
     font-family: overwatch;
