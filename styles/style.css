@@ -155,23 +155,6 @@ div {
     font-size: 2vw;
 }
 
-.strategy {
-    
-    padding-left: 20px;
-    margin-left: 3%;
-    border-radius: 10px;
-   background-color: #8ac5d8;
-    margin-bottom: 1.5%;
-}
-
-.strengths {
-    padding-left: 20px;
-    margin-left: 3%;
-    border-radius: 10px;
-    background-color: #8ac5d8;
-    margin-top: 1.5%;
-}
-
 
 
 .contentFlex {
@@ -196,17 +179,39 @@ div {
     margin-right: 3%;
 }
 
+.strategy {
+    
+    margin-left: 3%;
+    border-radius: 20px;
+    background-color: #8ac5d8;
+    margin-bottom: 1.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-bottom: 4px solid #ccc;
+}
+
+
 .tips {
     
     background-color: #8ac5d8;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 1.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-bottom: 4px solid #ccc;
     
 }
 
 .counters {
     padding-right: 1%;
     background-color: #8ac5d8;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 1.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-bottom: 4px solid #ccc;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
 }

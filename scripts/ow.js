@@ -3,10 +3,16 @@ var heroShowing = false;
 var toggleSpeed = 250;
 
 var prevHero = "";
+var currentHero = "";
 
 
 function showContent(event) {
    var char = event.target.id;
+    currentHero = char;
+    document.getElementById(char).style.backgroundColor = "darkred";
+    if (prevHero != "") {
+    document.getElementById(prevHero).style.backgroundColor = "#f1f1f1";
+    }
    if (prevHero === char) {
        close(char);
        prevHero = "";       
