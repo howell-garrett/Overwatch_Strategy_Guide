@@ -1,54 +1,29 @@
-var tankShowing = false;
-var damageShowing = false;
-var supportShowing = false;
+var heroShowing = false;
+
 var toggleSpeed = 250;
 
-var prevTank = "";
-var prevDamage = "";
-var prevSupport = "";
+var prevHero = "";
 
-function showContentTank(event) {
+
+function showContent(event) {
    var char = event.target.id;
-   if (prevTank === char) {
+   if (prevHero === char) {
        close(char);
-       prevTank = "";       
+       prevHero = "";       
        return;
 
    }
-    closeAllTanks();
+    closeAllHeroes();
     $("#" + char + "Profile").toggle(250);
-    prevTank = char;
+    prevHero = char;
 }
 
-function showContentDamage(event) {
-   var char = event.target.id;
-   if (prevDamage === char) {
-       close(char);
-       prevDamage = "";       
-       return;
-   }   
-    closeAllDamage();
-    $("#" + char + "Profile").toggle(250);
-    prevDamage = char;
-}
-
-function showContentSupport(event) {
-   var char = event.target.id;
-   if (prevSupport === char) {
-       close(char);
-       prevSupport = "";       
-       return;
-   }   
-    closeAllSupport();
-    $("#" + char + "Profile").toggle(250);
-    prevSupport = char;
-}
 
 function close(charater) {
     $("#" + charater + "Profile").hide(toggleSpeed);
 }
 
-function closeAllTanks() {
+function closeAllHeroes() {
     $("#orisaProfile").hide(toggleSpeed);
     $("#dvaProfile").hide(toggleSpeed);
     $("#roadhogProfile").hide(toggleSpeed);
@@ -56,10 +31,6 @@ function closeAllTanks() {
     $("#winstonProfile").hide(toggleSpeed);
     $("#zaryaProfile").hide(toggleSpeed);
     $("#wrecking_ballProfile").hide(toggleSpeed);
-   
-}
-
-function closeAllDamage() {
     $("#bastionProfile").hide(toggleSpeed);
     $("#doomfistProfile").hide(toggleSpeed);
     $("#genjiProfile").hide(toggleSpeed);
@@ -74,10 +45,6 @@ function closeAllDamage() {
     $("#torbjornProfile").hide(toggleSpeed);
     $("#tracerProfile").hide(toggleSpeed);
     $("#widowmakerProfile").hide(toggleSpeed)
-}
-
-
-function closeAllSupport() {
     $("#anaProfile").hide(toggleSpeed);
     $("#brigitteProfile").hide(toggleSpeed);
     $("#lucioProfile").hide(toggleSpeed);
