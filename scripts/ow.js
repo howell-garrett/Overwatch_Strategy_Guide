@@ -86,4 +86,8 @@ function closeAllSupport() {
     $("#zenyattaProfile").hide(toggleSpeed);
 }
 
+function show() {
+    $(".dropdown-content").toggle(toggleSpeed);
+}
+
 
