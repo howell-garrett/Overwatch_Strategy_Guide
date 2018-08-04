@@ -57,7 +57,7 @@ h1 {
 }
 
 
-.dropdown-content a {
+.dropdownLink {
     color: black;
     padding: 6px 8px;
     text-decoration: none;
@@ -74,12 +74,12 @@ h1 {
     position: absolute;
 }
 
-a {
+.dropdownLink {
     font-size: 2vw;
     font-family: overwatch
 }
 
-a:hover {
+.dropdownLink:hover {
     background-color: aqua;
 }
 
@@ -119,6 +119,10 @@ h2 {
     border-radius: 10px;
  
 }
+#socialFlex {
+    display: flex;  
+    justify-content: center;
+}
 
 
 .charBox {
@@ -133,4 +137,13 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;;    
+}
+
+.socialMedia {
+    padding: 20px;
+    opacity: .6;
+}
+
+.socialMedia:hover {
+    opacity: 1;
 }
